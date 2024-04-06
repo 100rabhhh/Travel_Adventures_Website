@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Travel Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+    <header>
+        <h1>Travel Adventures</h1>
+    </header>
+    <nav>
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="about.html"><i class="fas fa-info-circle"></i> About Us</a>
+        <a href="services.html"><i class="fas fa-cogs"></i> Services</a>
+        <a href="gallery.html"><i class="fas fa-images"></i> Gallery</a>
+        <a href="register.html"><i class="fas fa-user-plus"></i> Registration</a>
+        <a href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a>
+        <span class="contact-info"><i class="fas fa-phone"></i> Contact +91 7559400009</span>
+    </nav>
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <p>View stunning photos from our previous travelers and get inspired for your next journey.</p><br><br><br>
+        <div class="tourist-destinations">
+            <div class="tourist-destination">
+                <img src="mumbai.jpg" alt="Mumbai">
+                <div class="tourist-destination-info">
+                    <h3>Mumbai</h3>
+                    <button onclick="bookTrip('Mumbai')">Book a Trip</button>
+                </div>
+            </div>
+            <div class="tourist-destination">
+                <img src="delhi.jpg" alt="Delhi">
+                <div class="tourist-destination-info">
+                    <h3>Delhi</h3>
+                    <button onclick="bookTrip('Delhi')">Book a Trip</button>
+                </div>
+            </div>
+            <div class="tourist-destination">
+                <img src="ayodhya.jpg" alt="Ayodhya">
+                <div class="tourist-destination-info">
+                    <h3>Ayodhya</h3>
+                    <button onclick="bookTrip('Ayodhya')">Book a Trip</button>
+                </div>
+            </div>
+            <div class="tourist-destination">
+                <img src="kathmandu.jpg" alt="Kathmandu">
+                <div class="tourist-destination-info">
+                    <h3>Kathmandu</h3>
+                    <button onclick="bookTrip('Kathmandu')">Book a Trip</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        &copy; 2024 Travel Adventures. All rights reserved.
+    </footer>
+    <div class="get-in-touch">
+        <span>Get in touch with us:</span>
+        <a href="https://www.instagram.com/your_instagram_id" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/your_facebook_page" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    </div>
+    <script>
+        function bookTrip(destination) {
+            window.location.href = 'book.html?destination=' + destination;
+        }
+    </script>
+</body>
+</html>

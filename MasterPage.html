@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Travel Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="master.css">
+</head>
+<body>
+    <header>
+        <h1>Travel Adventures</h1>
+    </header>
+
+    <div class="login-container">
+        <div class="login-button" id="loginButton" onclick="toggleDropdown()">
+            <i class="fas fa-user-circle"></i> Login <i class="fas fa-caret-down"></i>
+        </div>
+
+        <div class="dropdown" id="dropdown" onmouseleave="hideDropdown()">
+            <a href="admin_registration.html"><i class="fas fa-user-shield"></i> Admin</a>
+            <a href="login.html"><i class="fas fa-user"></i> User</a> <!-- Link to index.html for User button -->
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 Travel Adventures. All rights reserved.
+    </footer>
+
+    <div class="get-in-touch">
+        <span>Get in touch with us:</span>
+        <a href="https://www.instagram.com/your_instagram_id" target="_blank"><i class="fab fa-instagram"></i></a> <!-- Updated Instagram link -->
+        <a href="https://www.facebook.com/your_facebook_page" target="_blank"><i class="fab fa-facebook-f"></i></a> <!-- Updated Facebook link -->
+    </div>
+
+    <script>
+        var dropdown = document.getElementById("dropdown");
+
+        function toggleDropdown() {
+            dropdown.classList.toggle("show");
+        }
+
+        function hideDropdown() {
+            dropdown.classList.remove("show");
+        }
+    </script>
+</body>
+</html>

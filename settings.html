@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - Admin Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="settings.css">
+</head>
+<body>
+    <header>
+        <div class="header-buttons">
+            <a href="#" onclick="loadMainPage()">MainPage</a>
+        </div>
+        <h1>Settings</h1>
+    </header>
+    <nav>
+        <a href="admin.html"><i class="fas fa-home"></i> Dashboard</a>
+        <a href="users.php"><i class="fas fa-users"></i> Users</a>
+        <a href="feedback.php"><i class="fas fa-comment"></i> Feedback</a>
+        <a href="settings.html" class="active"><i class="fas fa-cog"></i> Settings</a>
+        <a href="logout.html"><i class="fas fa-sign-out-alt"></i> Logout</a>
+    </nav>
+    <section class="dashboard-container">
+        <h2>Settings</h2>
+        <div class="settings-options">
+            <h3>General Settings</h3>
+            <label for="theme">Select Theme:</label>
+            <select id="theme">
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+            </select>
+            <button onclick="saveSettings()">Save Settings</button>
+        </div>
+    </section>
+    <footer>
+        &copy; 2024 Travel Adventures. All rights reserved.
+    </footer>
+    <script>    
+    function loadMainPage() {
+        window.location.href = "MasterPage.html";
+    }
+    function saveSettings() {
+        var theme = document.getElementById("theme").value;
+        console.log("Selected Theme:", theme);
+        alert("Settings saved!");
+    }
+    </script>
+</body>
+</html>

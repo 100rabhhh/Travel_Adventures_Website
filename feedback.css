@@ -1,0 +1,100 @@
+.header-buttons {
+    float: left;
+}
+
+.header-buttons a {
+    color: #fff;
+    padding: 15px;
+    margin-right: 15px;
+    border-radius: 8px;
+    background-color: #555;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+    font-weight: bold;
+    transform: scale(1);
+}
+/* Reset CSS */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+}
+/* Header Styles */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+/* Navigation Styles */
+nav {
+    background-color: #FFC60B;
+    padding: 10px;
+    text-align: center;
+}
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+nav a.active {
+    background-color: #ddd;
+}
+/* Ticket Styles */
+.ticket-container {
+    padding: 20px;
+}
+.ticket {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.ticket h2 {
+    margin-bottom: 10px;
+}
+.ticket-info {
+    padding: 10px 0;
+}
+/* Feedback Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+th {
+    background-color: #FFC60B;
+    color: #333;
+}
+/* Specific column headers */
+th.booking-header,
+th.satisfaction-header,
+th.service-header,
+th.recommendation-header,
+th.suggestions-header {
+    background-color: #FFC60B;
+}
+/* Delete button style */
+.delete-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.delete-button:hover {
+    background-color: darkred;
+}

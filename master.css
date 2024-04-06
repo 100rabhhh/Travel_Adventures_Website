@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('master.jpg');
+    background-size: cover;
+    background-position: 50% 15%; /* Center the background image */
+    background-repeat: no-repeat;
+    height: 100vh; /* Ensure the body takes up the full viewport height */
+    overflow: auto; /* Enable scrolling if needed */
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.login-container {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+}
+
+.login-button {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #555;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    right: 10px;
+    border-radius: 5px; /* Add some border-radius for a softer look */
+}
+
+.dropdown.show {
+    display: block;
+}
+
+.dropdown a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown a:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.get-in-touch {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    background-color: #ff0000 !important; /* Red color with !important */
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease; /* Adding transition property for smooth effect */
+}
+
+.get-in-touch:hover {
+    transform: scale(1.1); /* Scale up by 10% on hover */
+}
+
+.get-in-touch a {
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.get-in-touch i {
+    font-size: 24px;
+}
+
+
